@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/ShoppingList/api/purchase/RequestHandler.php?query=$1 [QSA,NC,L,R=307]
