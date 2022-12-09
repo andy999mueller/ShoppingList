@@ -55,6 +55,14 @@ class ShoppingList implements JsonSerializable
    }
 
    /**
+    * Get the identifier string for this shopping list
+    */
+   public function getIdentifier() : string
+   {
+      return $this->Identifier;
+   }
+
+   /**
     * Specify data which should be serialized to JSON
     * Serializes the object to a value that can be serialized natively by json_encode().
     *
